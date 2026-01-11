@@ -68,3 +68,5 @@ jobs:
             -Dsonar.projectKey=EC-Nantes_DaudinDegodetTPNote \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
             -Dsonar.projectBaseDir=.
+            - Dsonar.java.binaries = target/classes \
+            - Dsonar.coverage.jacoco.xmlReportPaths = target/site/jacoco/jacoco.xml
